@@ -11,6 +11,7 @@ int populacao1; //quantidade
 float area1; //em km quadrados
 float pib1; //valor decimal
 int ponto1;
+  
 // Variáveis da Carta 2 ******************************************************************************************************
   
 char estado2[0];
@@ -149,11 +150,11 @@ printf("Número de pontos turísticos: %d\n", ponto2);
 
 // Calculando as variáveis de densidade populacional e PIB per capita (Carta 2)
   
-densidadePopulacional2 = populacao2 / area2;
-printf("A densidade populacional é: %.2f\n", densidadePopulacional2);
-pibPerCapita2 = pib1 / populacao2;
-printf("O PIB per capita é: %.2f\n", pibPerCapita2);
-printf("\n");
+  densidadePopulacional2 = populacao2 / area2;
+  printf("A densidade populacional é: %.2f\n", densidadePopulacional2);
+  pibPerCapita2 = pib1 / populacao2;
+  printf("O PIB per capita é: %.2f\n", pibPerCapita2);
+  printf("\n");
   
 return 0;
 }
