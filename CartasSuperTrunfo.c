@@ -125,7 +125,7 @@ printf("Código: %s\n", codigo2); //concatenação
 printf("Nome da cidade: %s\n", cidade2);
 printf("População: %d\n",populacao2);
 printf("Área: %.2f km² \n", area2);
-printf("PIB: %.2f\n", pib2;
+printf("PIB: %.2f\n", pib2);
 printf("Número de pontos turísticos: %d\n", ponto2);
 return 0;
 }
