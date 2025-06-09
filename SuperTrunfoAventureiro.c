@@ -88,12 +88,11 @@ printf("\n \n");
 
 // Calculando as variáveis de densidade populacional e PIB per capita (Carta 1) DESAFIO AVENTUREIRO
   
-densidadePopulacional1 = populacao1 / area1;
-printf("A densidade populacional é: %.2f\n", densidadePopulacional1);
-pibPerCapita1 = pib1 / populacao1;
-printf("O PIB per capita é: %.2f\n", pibPerCapita1);
-printf("\n");
-printf("\n");
+    densidadePopulacional1 = (float)populacao1 / area1;
+    printf("A densidade populacional é: %.2f hab/km²\n", densidadePopulacional1);
+    pibPerCapita1 = pib1 / (float)populacao1;
+    printf("O PIB per capita é: %.2f\n", pibPerCapita1);
+    printf("\n");
   
   
   //Iniciando coleta de informações da SEGUNDA CARTA de cidade -------------------------------------------------------------------
@@ -150,11 +149,11 @@ printf("Número de pontos turísticos: %d\n", ponto2);
 
 // Calculando as variáveis de densidade populacional e PIB per capita (Carta 2) DESAFIO AVENTUREIRO
   
-  densidadePopulacional2 = populacao2 / area2;
-  printf("A densidade populacional é: %.2f\n", densidadePopulacional2);
-  pibPerCapita2 = pib1 / populacao2;
-  printf("O PIB per capita é: %.2f\n", pibPerCapita2);
-  printf("\n");
+    densidadePopulacional2 = (float)populacao2 / area2;
+    printf("A densidade populacional é: %.2f hab/km²\n", densidadePopulacional2);
+    pibPerCapita1 = pib2 / (float)populacao2;
+    printf("O PIB per capita é: %.2f\n", pibPerCapita2);
+    printf("\n");
   
 return 0;
 }
