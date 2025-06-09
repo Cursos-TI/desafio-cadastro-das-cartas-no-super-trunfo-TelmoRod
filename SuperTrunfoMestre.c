@@ -12,7 +12,7 @@ float area1; //em km quadrados
 double pib1; //valor decimal. Alterado para double pois o valor a ser coletado para a variável excede a capacidade de float
 int ponto1;
 double superpoder1;
-float parametro_densidade_superpoder1;
+
   
 // Variáveis da Carta 2 ******************************************************************************************************
   
@@ -24,7 +24,7 @@ float area2; //em km quadrados
 double pib2; //valor decimal. Alterado para double pois o valor a ser coletado para a variável excede a capacidade de float
 int ponto2;
 double superpoder2;
-float parametro_densidade_superpoder2;
+
 
 // Variáveis do DESAFIO AVENTUREIRO ******************************************************************************************
     // CARTA 1
@@ -53,8 +53,7 @@ float parametro_densidade_superpoder2;
   
 printf("Olá usuário(a), hoje você poderá cadastrar as informações para criação de duas cartas de Super Trunfo de CIDADES\n \n");
     printf("\n");
-printf("IMPORTANTE: Ao informar os dados numéricos, não utilize separadores de casas decimas como pontos e virgulas e nem descrições como milhão/bihão\n \n");
-printf("pois podem impactar nos cálculos. Digite apenas o numeral, exemplo 180000 \n \n");
+printf("IMPORTANTE: Ao informar os dados numéricos, não utilize separadores de casas decimas como pontos e nem descrições como milhão/bihão, pois podem impactar nos cálculos. Digite apenas o numeral, exemplo 180000\n \n");
   
 printf("Para iniciarmos, insira as informações da PRIMEIRA CIDADE \n \n");
 
@@ -207,26 +206,9 @@ printf("Número de pontos turísticos: %d\n", ponto2);
   
 // DESAFIO MESTRE - COMPARAÇÃO ENTRE AS INFORMAÇÕES DE DUAS CARTAS PARA DETERMINAR QUAL É A VENCEDORA ==============================
 
-printf("Agora que cadastramos as duas cartas, vamos verificar qual carta é a vencedora, ou seja, que possui maior Super Poder \n");
+printf("Agora que cadastramos as duas cartas, vamos verificar qual carta é a vencedora, ou seja, que possui maior Super Poder: \n");
 
-
-  //*************REVISAR ESTA PARTE ABAIXO **********************************************************
-  
-//Exibir os Resultados das Comparações: Para cada atributo, imprima na tela qual carta venceu (Carta 1 ou Carta 2), exibindo o resultado da comparação (1 para verdadeiro – Carta 1 vence – e 0 para falso – Carta 2 vence).
-//Exemplo de Saída (após a entrada dos dados):
-
-//Comparação de Cartas:
-//População: Carta 1 venceu (1)
-//Área: Carta 1 venceu (1)
-//PIB: Carta 1 venceu (1)
-//Pontos Turísticos: Carta 1 venceu (1)
-//Densidade Populacional: Carta 2 venceu (0)
-//PIB per Capita: Carta 1 venceu (1)
-//Super Poder: Carta 1 venceu (1)
-
-  
-  //Comparação das cartas
-
+// PARAMETROS PARA COMPARAÇÃO (VERDADEIRO OU FALSO)
     comparacao_PontosTuristicos = ponto1 > ponto2;
     comparacao_Populacao = populacao1 > populacao2;
     comparacao_Area = area1 > area2;
@@ -235,18 +217,19 @@ printf("Agora que cadastramos as duas cartas, vamos verificar qual carta é a ve
     comparacao_PibPercapita = pibPerCapita1 > pibPerCapita2; // DESAFIO AVENTUREIRO
     comparacao_SuperPoder = superpoder1 > superpoder2; // DESAFIO MESTRE
 
+// DEMONSTRAÇÃO DO RESULTADO AO USUÁRIO
   
     printf("\nComparação de Cartas:\n");
-    printf("Legenda: (1) a primeria cidade é a vencedora\n");
+    printf("Legenda: (1) a primeira cidade é a vencedora\n");
     printf("Legenda: (0) a segunda cidade é a vencedora\n");
 
-    printf("Pontos Turísticos (%s vs %s): %d\n", cidade1, cidade2, comparacao_PontosTuristicos);
-    printf("\nPopulação (%s vs %s): %d\n", cidade1, cidade2, comparacao_Populacao);
-    printf("Área (%s vs %s): %d\n", cidade1, cidade2, comparacao_Area);
-    printf("PIB (%s vs %s): %d\n", cidade1, cidade2, comparacao_Pib);
-    printf("Densidade Populacional (%s vs %s): %d\n", cidade1, cidade2, comparacao_DensidadePopulacional);
-    printf("PIB per Capita (%s vs %s): %d\n", cidade1, cidade2, comparacao_PibPercapita);
-    printf("Super Poder (%s vs %s): %d\n", cidade1, cidade2, comparacao_SuperPoder);
+    printf("Pontos Turísticos: %d\n", comparacao_PontosTuristicos);
+    printf("\nPopulação: %d\n", comparacao_Populacao);
+    printf("Área: %d\n", comparacao_Area);
+    printf("PIB: %d\n", comparacao_Pib);
+    printf("Densidade Populacional: %d\n", comparacao_DensidadePopulacional);
+    printf("PIB per Capita: %d\n", comparacao_PibPercapita);
+    printf("Super Poder: %d\n", comparacao_SuperPoder);
 
 
 return 0;
